@@ -1,10 +1,10 @@
 MVP:
 - Event
-  + Create
   + List
   + View
   + Vote
   + Notification
+  + Create
 - User
   + Authentication: Login/Logout
 
