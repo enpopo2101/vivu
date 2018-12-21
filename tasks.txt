@@ -1,0 +1,14 @@
+MVP:
+- Event
+  + Create
+  + List
+  + View
+  + Vote
+  + Notification
+- User
+  + Authentication: Login/Logout
+
+
+Nice to have
+- Dashboard
+- ...
