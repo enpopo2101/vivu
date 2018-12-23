@@ -7,6 +7,7 @@ const router = express.Router()
 const indexRouter = require('./routes/index')
 const usersRouter = require('./routes/users')
 const eventsRouter = require('./routes/events')
+const createEventRouter = require('./routes/create-event')
 
 const mongoose = require('mongoose')
 const Schema = mongoose.Schema
@@ -23,7 +24,26 @@ db.once('open', async function() {
 
   await VivuEvent.deleteMany({})
   await User.deleteMany({})
-  await VivuEvent.insertMany([{ name: 'Sự kiện 1' }, { name: 'Sự kiện 2' }, { name: 'Sự kiện 3' }])
+  await VivuEvent.insertMany([
+    {
+      name: 'Sự kiện 1',
+      address: 'Số 7 Tây Hồ',
+      description: 'Sự kiện diễn ra vào lúc 7h tại tây hồ',
+      startDate: '2018-11-01T00:00:00+07:00',
+    },
+    {
+      name: 'Sự kiện 2',
+      address: 'Số 7 Tây Hồ',
+      description: 'Sự kiện diễn ra vào lúc 7h tại tây hồ',
+      startDate: '2018-11-01T00:00:00+07:00',
+    },
+    {
+      name: 'Sự kiện 3',
+      address: 'Số 7 Tây Hồ',
+      description: 'Sự kiện diễn ra vào lúc 7h tại tây hồ',
+      startDate: '2018-12-01T00:00:00+07:00',
+    },
+  ])
   await User.insertMany([
     {
       username: 'admin',
@@ -36,12 +56,6 @@ db.once('open', async function() {
       roles: ['user'],
     },
   ])
-
-  console.log(
-    await VivuEvent.find({})
-      .lean()
-      .exec()
-  )
 })
 
 const app = express()
@@ -58,21 +72,22 @@ app.use(express.static(path.join(__dirname, 'public')))
 app.use('/', indexRouter)
 app.use('/users', usersRouter)
 app.use('/events', eventsRouter)
+app.use('/create-event', createEventRouter)
 
 // catch 404 and forward to error handler
-app.use(function(req, res, next) {
-  next(createError(404))
-})
+// app.use(function(req, res, next) {
+//   next(createError(404))
+// })
 
 // error handler
-app.use(function(err, req, res, next) {
-  // set locals, only providing error in development
-  res.locals.message = err.message
-  res.locals.error = req.app.get('env') === 'development' ? err : {}
+// app.use(function(err, req, res, next) {
+//   // set locals, only providing error in development
+//   res.locals.message = err.message
+//   res.locals.error = req.app.get('env') === 'development' ? err : {}
 
-  // render the error page
-  res.status(err.status || 500)
-  res.render('error')
-})
+//   // render the error page
+//   res.status(err.status || 500)
+//   res.render('error')
+// })
 app.listen(5000, () => console.log('Server started listening on port 5000!'))
 module.exports = app

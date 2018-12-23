@@ -20,7 +20,11 @@
                     <h1>Danh sách Events</h1>
                     <ul>
                       <% events.forEach(function(event) { %>
-                      <li><%=event.name%></li>
+                      <ul><%=event.name%></ul>
+                        <li><%=event.description%></li>
+                        <li> <%=event.address%> </li>
+                        <li> <%=event.startDate%></li>
+                      
                       <% }) %>  
                     </ul>
                     
