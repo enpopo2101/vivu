@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Event!!!!</title>
+    <link href="../public/stylesheets/bootstrap.min.css" rel="stylesheet">
+    <link href="../public/stylesheets/styleIndex.css" rel="stylesheet">
+
+  </head>
+
+  <body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">LQ hn</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Trang chủ
+                <span class="sr-only">(current)</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Giới thiệu</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Event</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Liên hệ</a>
+            </li>
+             <li class="nav-item">
+              <a class="nav-link" href="Login.html">Đăng nhập</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <script src="../public/javascripts/jquery.min"></script>
+    <script src="../public/javascripts/bootstrap.bundle.min"></script>
+
+    <div class="container">
+      <div class="row mt-4">
+        <div class="col-lg-8">
+          <div class="bx-wrapper" style="max-width: 100%;"><div class="bx-viewport" aria-live="polite" style="width: 100%; overflow: hidden; position: relative; height: 500px;"><ul class="bxslider" style="width: auto; position: relative;">
+               <img class="mySlides" src="../public/images/3.jpg" >
+                <img class="mySlides" src="../public/images/5.jpg" >
+                 <img class="mySlides" src="../public/images/7.jpeg" >
+                  <img class="mySlides" src="../public/images/1.jpg" ></ul>
+            </div>
+            </div>
+            <script>
+            var myIndex = 0;
+            carousel();
+
+            function carousel() {
+                var i;
+                var x = document.getElementsByClassName("mySlides");
+                for (i = 0; i < x.length; i++) {
+                   x[i].style.display = "none";  
+                }
+                myIndex++;
+                if (myIndex > x.length) {myIndex = 1}    
+                x[myIndex-1].style.display = "block";  
+                setTimeout(carousel, 2000); // Change image every 2 seconds
+            }
+            </script>
+        </div>
+        <!-- /.col-lg-8 -->
+        <div class="col-lg-4">
+          <h1>Sứ mệnh</h1>
+          <p>Tổng hợp sự kiện văn hoá, ăn uống, vui chơi giải trí lành mạnh diễn ra hằng ngày hằng giờ.</p>
+          <a class="btn btn1" href="#">Chi tiết></a>
+        </div>
+      </div>
+   
+
+
+      <div class="card text-white bg-secondary my-4 text-center">
+        <div class=" row card-body">
+              <div class="col-md-4">
+                <input type="text" class="form-control" placeholder="Tìm kiếm"/>
+              </div>
+              <div class="col-md-4">
+               <select class="form-control">
+                    <option value="0">--Quận--</option>
+          
+                </select>
+              </div>
+              <div class="col-md-4">
+                <button type="submit" class="btn btn-primary">TÌM KIẾM</button>
+              </div>
+        </div>
+      </div>
+    <div class="row">
+      <div class="col-md-6 col-lg-6 col-sm-9 col-xs-9 ">
+      <h2 class="h2">SỰ KIỆN NỔI BẬT</h2>
+      </div>
+   </div>
+
+      <!-- Content Row -->
+    <div class="row">
+        <div class="col-md-4 mb-4">
+          <div class="card h-100">
+            <div class="card-body">
+                 <a class="event_image" href="./nguoitinh.html"><img alt="LIVESHOW “NGƯỜI TÌNH”" src="../public/images/img2.jpg" style="width: 308px; height: 210px;"></a>
+            </div>
+           <div class="card-footer">
+                      <a href="./nguoitinh.html"  class="show">LIVESHOW “NGƯỜI TÌNH”</a>
+                      <div>
+                        <div class="">
+                        <span aria-label="Monday, December 17, 2018" ctitle="Monday, December 17, 018">
+                          <span class="">DEC</span>
+                          <span class="">23</span>
+                          <span class="">Đống Đa</span>
+                        </span>
+                        </div>
+                      </div>
+                      <div class="col-md-5">
+                        <buton class="btn btn1">Quan tâm</buton>
+                      </div>
+
+            </div>
+          </div>
+        </div>
+        <!-- /.col-md-4 -->
+        <div class="col-md-4 mb-4">
+          <div class="card h-100">
+            <div class="card-body">
+                  <a class="event_image" href="Songtichcuc.html"><img alt="Khóa học SỐNG TÍCH CỰC tại Hà Nội" src="Img/img4.jpg" style="width: 308px; height: 210px;"></a>
+            </div>
+            <div class="card-footer">
+                      <a href="Songtichcuc.html"  class="show">Khóa học SỐNG TÍCH CỰC tại Hà Nội</a>
+                      <div>
+                        <div class="">
+                        <span aria-label="Monday, December 17, 2018" ctitle="Monday, December 17, 018">
+                          <span class="">DEC</span>
+                          <span class="">20</span>
+                          <span class="">Tây Hồ</span>
+                        </span>
+                        </div>
+                      </div>
+                      <div class="col-md-5">
+                        <buton class="btn btn1">Quan tâm</buton>
+                      </div>
+
+            </div>
+          </div>
+        </div>
+        <!-- /.col-md-4 -->
+       <div class="col-md-4 mb-4">
+          <div class="card h-100">
+            <div class="card-body">
+                 <a class="event_image" href="chomeo.html"><img alt="Garage Sale 2018 - Trạm cứu hộ chó mèo Hà Nội" src="Img/img3.jpg" style="width: 308px; height: 210px;"></a>
+            </div>
+           <div class="card-footer">
+                      <a href="chomeo.html"  class="show">Garage Sale-Trạm cứu hộ chó mèo Hà Nội</a>
+                      <div>
+                        <div class="">
+                        <span aria-label="Monday, December 17, 2018" ctitle="Monday, December 17, 018">
+                          <span class="">DEC</span>
+                          <span class="">15</span>
+                          <span class="">Đống Đa</span>
+                        </span>
+                        </div>
+                      </div>
+                      <div class="col-md-5">
+                        <buton class="btn btn1">Quan tâm</buton>
+                      </div>
+
+            </div>
+          </div>
+        </div>
+        <!-- /.col-md-4 -->
+
+      </div>
+      
+     
+      <!-- /.row -->
+      <div class="row">
+      <div class="col-md-6 col-lg-6 col-sm-9 col-xs-9 ">
+      <h2 class="h2">SỰ KIỆN SẮP DIỄN RA</h2>
+      </div>
+      </div>
+      <div class="row">
+      <div class="col-md-4 mb-4">
+          <div class="card h-100">
+            <div class="card-body">
+             <a class="event_image" href=""><img alt="Garage Sale 2018 - Trạm cứu hộ chó mèo Hà Nội" src="Img/img15.jpg" style="width: 308px; height: 210px;"></a>
+            </div>
+              <div class="card-footer">
+                      <a href=""  class="show">NGÕ NHẠC ngày 9/12: EM VỀ TINH KHÔI</a>
+                      <div>
+                        <div class="">
+                        <span aria-label="Monday, December 17, 2018" ctitle="Monday, December 17, 018">
+                          <span class="">DEC</span>
+                          <span class="">20</span>
+                          <span class="">Đống Đa</span>
+                        </span>
+                        </div>
+                      </div>
+                      <div class="col-md-5">
+                        <button class="btn btn1">Quan tâm</button>
+                      </div>
+            </div>
+          </div>
+        </div>
+        <!-- /.col-md-4 -->
+      <div class="col-md-4 mb-4">
+          <div class="card h-100">
+            <div class="card-body">
+                 <a class="event_image" href="https://ticketgo.vn/event/liveshow-nguoi-tinh"><img alt="" src="Img/img10.jpg" style="width: 308px; height: 210px;"></a>
+            </div>
+            <div class="card-footer">
+                      <a href=""  class="show">Galaxy Music Show-JustaTee, Ngọt, Da Lab</a>
+                      <div>
+                        <div class="">
+                        <span aria-label="Monday, December 17, 2018" ctitle="Monday, December 17, 018">
+                          <span class="">DEC</span>
+                          <span class="">20</span>
+                          <span class="">Đống Đa</span>
+                        </span>
+                        </div>
+                      </div>
+                      <div class="col-md-5">
+                        <buton class="btn btn1">Quan tâm</buton>
+                      </div>
+
+            </div>
+          </div>
+        </div>
+        <!-- /.col-md-4 -->
+        <div class="col-md-4 mb-4">
+          <div class="card h-100">
+            <div class="card-body">
+                 <a class="event_image" href="https://ticketgo.vn/event/liveshow-nguoi-tinh"><img alt="" src="Img/img11.jpg" style="width: 308px; height: 210px;"></a>
+            </div>
+           <div class="card-footer">
+                      <a href=""  class="show">Offline Vietnammechkey lần thứ 5</a>
+                      <div>
+                        <div class="">
+                        <span aria-label="Monday, December 17, 2018" ctitle="Monday, December 17, 018">
+                          <span class="">DEC</span>
+                          <span class="">17</span>
+                          <span class="">Đống Đa</span>
+                        </span>
+                        </div>
+                      </div>
+                      <div class="col-md-5">
+                        <buton class="btn btn1">Quan tâm</buton>
+                      </div>
+            </div>
+          </div>
+        </div>
+         <div class="row">
+      <div class="col-md-4 mb-4">
+          <div class="card h-100">
+            <div class="card-body">
+             <a class="event_image" href=""><img alt="" src="Img/img12.jpg" style="width: 308px; height: 210px;"></a>
+            </div>
+             <div class="card-footer">
+                      <a href=""  class="show">Khoá học làm web  cơ bản miễn phí</a>
+                      <div>
+                        <div class="">
+                        <span aria-label="Monday, December 17, 2018" ctitle="Monday, December 17, 018">
+                          <span class="">DEC</span>
+                          <span class="">17</span>
+                          <span class="">Đống Đa</span>
+                        </span>
+                        </div>
+                      </div>
+                      <div class="col-md-5">
+                        <buton class="btn btn1">Quan tâm</buton>
+                      </div>
+            </div>
+          </div>
+        </div>
+        <!-- /.col-md-4 -->
+        <div class="col-md-4 mb-4">
+          <div class="card h-100">
+            <div class="card-body">
+             <a class="event_image" href=""><img alt="" src="Img/img9.jpg" style="width: 308px; height: 210px;"></a>
+            </div>
+             <div class="card-footer">
+                      <a href=""  class="show">Jingle Bells 2018</a>
+                      <div>
+                        <div class="">
+                        <span aria-label="Monday, December 17, 2018" ctitle="Monday, December 17, 018">
+                          <span class="">DEC</span>
+                          <span class="">19</span>
+                          <span class="">Đống Đa</span>
+                        </span>
+                        </div>
+                      </div>
+                      <div class="col-md-5">
+                        <buton class="btn btn1">Quan tâm</buton>
+                      </div>
+            </div>
+          </div>
+        </div>
+        <!-- /.col-md-4 -->
+        <div class="col-md-4 mb-4">
+          <div class="card h-100">
+            <div class="card-body">
+             <a href=""><img alt="" src="Img/img14.jpg" style="width: 308px; height: 210px;"></a>
+            </div>
+              <div class="card-footer">
+                      <a href=""  class="show">SAAS DAY 2018 - The Future of Work</a>
+                      <div>
+                        <div class="">
+                        <span aria-label="Monday, December 17, 2018" ctitle="Monday, December 17, 018">
+                          <span class="">DEC</span>
+                          <span class="">18</span>
+                          <span class="">Đống Đa</span>
+                        </span>
+                        </div>
+                      </div>
+                      <div class="col-md-5">
+                        <buton class="btn btn1">Quan tâm</buton>
+                      </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+    </div>
+<footer id="myFooter">
+        <div class="container-fluid">
+            <div class="row text-center">
+                <div class="col-12 col-sm-6 col-md-3">
+                    <img src="Img/logo5.png" style="margin-top:15px; width: 130px;height:130px;"> 
+                </div>
+                <div class="col-12 col-sm-6 col-md-2">
+                    <h5>Về chúng tôi</h5>
+                    <ul>
+                        <li><a href="#">Giới Thiệu</a></li>
+                        <li><a href="#">Liên Hệ<br /></a></li>
+                        <li><a href="#">Trang Chủ</a></li>
+                        
+                    </ul>
+                </div>
+             
+                <div class="col-sm-6 col-md-2">
+                    <h5>Hỗ Trợ</h5>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Trợ Giúp<br /></a></li>
+                        <li><a href="#">Diễn Đàn</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 social-networks">
+                    <div></div><a href="#" class="facebook"><i class="fa fa-facebook"></i></a><a href="#" class="twitter"><i class="fa fa-twitter"></i></a><a href="#" class="google"><i class="fa fa-google-plus"></i></a><a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
+                    <button
+                        class="btn btn1" type="button" style="margin-top:20px;">Contact us</button>
+                </div>
+            </div>
+            <div class="row footer-copyright">
+                <div class="col">
+                    <p>© 2010 Copyright  ~ Designed By Mu</p>
+                </div>
+            </div>
+        </div>
+
+s
+    <link rel="stylesheet" href="css/Bold-BS4-Footer-Big-Logo.css" />
+    <link rel="stylesheet" href="css/Bold-BS4-Footer-Social.css" />
+    <link rel="stylesheet" href="css/Footer-Basic.css" />
+    <link rel="stylesheet" href="css/Footer-Clean.css" />
+    <link rel="stylesheet" href="css/Footer-Dark.css" />
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    </footer>
+    </body>
+    </html>
