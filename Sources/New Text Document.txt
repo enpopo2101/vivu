@@ -1,2 +1,0 @@
-Sources/node_modules
-Sources/.idea
