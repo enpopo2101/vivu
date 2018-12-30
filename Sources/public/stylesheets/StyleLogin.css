@@ -1,0 +1,93 @@
+body{
+	margin:0;
+	padding:0;
+	font-family:sans-serif;
+	background:url(login2.jpg);
+	height:100%;
+	background-size:cover;
+	background-position:center;
+}
+.login-page{
+       
+	width:360px;
+	padding:10% 0 0;
+	margin:auto;
+}
+.form{
+	position:relative;
+	margin:0 auto 100px;
+	padding:25px;
+	background: rgba(0,0,0,.8);
+	text-align:center;
+	box-shadow: 0 15px 25px rgba(0,0,0,.5);
+	border-radius:10px;
+}
+.form h2{
+	margin: 0 0 30px;
+	padding:0;
+	color: #fff;
+	text-align:center;
+	
+}
+.form .login-form{
+	position:relative;
+}
+.form .login-form input{
+	width:100%;
+	padding: 10px 0;
+	font-size: 16px;
+	color:#fff;
+	margin-bottom:30px;
+	border:none;
+	border-bottom:1px solid #fff;
+	outline: none;
+	background: transparent;
+}
+.form .login-form label{
+	position:absolute;
+	top:0;
+	left:0;
+	padding: 10px 0;
+	font-size:16px;
+	color:#fff;
+	pointer-events:none;
+	transition: .5s;	
+}
+.form .login-form input:focus ~ label,
+.form .login-form input:valid ~ label
+{
+	top:-18px;
+	left:0;
+	color:#03a9f4;
+	font-size:12px;\
+	valid ~
+}
+
+
+.form button{
+	text-transform:uppercase;
+	outline:0;
+	background:#4CAF50;
+	width:100%;
+	border:0;
+	padding:15px;
+	color:#FFFFFF;
+	font-size:14px;
+	
+}
+.form button:hover,.form button:active{
+	background:#43A047;
+}
+.form .message{
+	margin:15px 0 0;
+	color:aliceblue;
+	font-size:18px;
+}
+.form .message a{
+	color :#ffcc00;
+	text-decoration:none;
+	font-size:20px;
+}
+.form .Sign-form{
+	display:none;
+}
